@@ -1,0 +1,19 @@
+{
+  "name": "codespark_ng",
+  "authors": [
+    "Oluwafemi Sule <oluwafemisule@outlook.com>"
+  ],
+  "description": "Landing page",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

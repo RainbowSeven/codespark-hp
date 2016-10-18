@@ -1,0 +1,25 @@
+[
+    {
+        "date": "7th October 2015",
+        "title": "Africa Code Week",
+        "venue": "Ronik Comprehensive School, Oshodi-Isolo, Lagos, Nigeria",
+        "link": {
+            "information": "http://www.africacodeweek.org/events/49",
+            "title": "http://www.africacodeweek.org/events/49"
+        },
+        "photo": "http://codespark.ng/images/acwLogo.png",
+        "done": true
+    },
+    {
+        "date": "10th Oct 2015",
+        "title": "Africa Code Week",
+        "time": "",
+        "venue": "Ronik Comprehensive School, Oshodi-Isolo, Lagos, Nigeria",
+        "description": "Coming Soon",
+        "link": {
+            "title": "http://www.africacodeweek.org/events/49"
+        },
+        "photo": "http://codespark.ng/images/acwLogo.png",
+        "done": false
+    }
+]

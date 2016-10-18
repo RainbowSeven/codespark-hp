@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Bill Gates",
+        "role": "Microsoft",
+        "photo": "http://codespark.ng/images/bill.jpg",
+        "story": "I was 13 when I first got access to a computer. I wrote a program to play tick-tack-toe."
+    },
+    {
+        "name": "Mark Zuckerberg",
+        "role": "Facebook Co-founder",
+        "photo": "http://codespark.ng/images/mark.jpeg",
+        "story": "Learning how to program didn't start off with wanting to learn all of computer science or trying to master this discipline or anything like that, It started off because I wanted to do this one simple thing -- I wanted to make something that was fun for myself and my sisters."
+    },
+    {
+        "name": "Gabe Newell",
+        "photo": "",
+        "role": "Co-founder of video game Valve",
+        "story": "The programmers of tomorrow are the wizards of the future, You're going to look like you have magic powers compared to everybody else."
+    }
+]
