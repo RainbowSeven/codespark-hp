@@ -4,34 +4,16 @@ function loadData(file, cb) {
 
 var Markup = {
   events: function (item) {
-    var venue = item.venue ? '<p><small>' + item.venue + '</small></p>' : '';
-    var info = item.link.information ? '<a href="'+ item.link.information +'">'+'Learn More</a>': '';
-    var title = '<h3>'+ item.title +'</h3>';
-    var date = '<p><span class="glyphicon glyphicon-calendar"></span> '+ item.date + '</p>'
-    var image = '<img src="'+ item.photo +'">';
-    return '<div>'+
-      image + title + venue + date + info
-    +'</div>';
+    return Mustache.render('<div><img src="{{photo}}"><h3>{{title}}</h3><p><small>{{venue}}</small></p><p><span class="glyphicon glyphicon-calendar"></span>{{date}}</p><a href="{{link.information}}">Learn More</a></div>', item);
   },
   inspire: function (item) {
-    var photo = '<img src="'+ item.photo +'">';
-    var name = '<p>'+item.name+'</p>';
-    var story = '<blockquote>'+item.story+'</blockquote>';
-    var role = '<p>'+item.role+'</p>';
-    return '<div class="row">'+
-      '<div class="col-sm-3">' + photo + '</div><div class="col-sm-9">' + name + story + role + '</div>'
-    +'</div>';
+    return Mustache.render('<div class="row"><div class="col-sm-3"><img src="{{photo}}"></div><div class="col-sm-9"><p>{{name}}</p><blockquote>{{story}}</blockquote><p>{{role}}</p></div></div>', item);
   },
   partner: function(item) {
-    return '<div class="col-sm-4"><div class="frame"><img src="' + item.brand + '"></div></div>';
+    return Mustache.render('<div class="col-sm-4"><div class="frame"><img src="{{brand}}"></div></div>', item);
   },
   member: function(item) {
-    var photo = '<img src="'+ item.photo +'">';
-    var name = '<p>'+item.name+'</p>';
-    var role = '<em>'+item.role+'</em>';
-    return '<div class="col-sm-4 member-card">'+
-      photo + '<div class="overlay">'+name + role+'</div>'
-    + '</div>';
+    return Mustache.render('<div class="col-sm-4 member-card"><img src="{{photo}}"><div class="overlay"><p>{{name}}</p><em>{{role}}</em></div></div>', item);
   }
 };
 
